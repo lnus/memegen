@@ -2,9 +2,9 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 class memeGen():
-	def generate(self, top, bot, meme):
+	def generate(self, top, bot, image):
 		#Opens up your SPICY MEME TEMPLATE
-		im = Image.open("templates/{image}".format(image=meme+".png"))
+		im = Image.open("templates/{image}".format(image=image))
 
 		#Resizes the image for perfect MEME size
 		im = im.resize((500, 500), Image.ANTIALIAS)
@@ -39,4 +39,4 @@ class memeGen():
 			botH += h + botP
 
 		#saves the dank meme	
-		im.save(meme+".png", "PNG")
+		im.save("output.png")
