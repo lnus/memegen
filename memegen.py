@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 class memeGen():
 	def generate(self, top, bot, image):
 		#Opens up your SPICY MEME TEMPLATE
-		im = Image.open("templates/{image}".format(image=image))
+		im = Image.open(image)
 
 		#Resizes the image for perfect MEME size
 		im = im.resize((500, 500), Image.ANTIALIAS)
