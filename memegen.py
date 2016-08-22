@@ -22,19 +22,19 @@ class memeGen():
 		#Writes the text with a spicy meme outline
 		for line in pTop:
 			w, h = draw.textsize(line, font=font)
-			draw.text((((width - w)/2)-2, topH), top, font=font, fill="black")
-			draw.text((((width - w)/2)+2, topH), top, font=font, fill="black")
-			draw.text((((width - w)/2), topH-2), top, font=font, fill="black")
-			draw.text((((width - w)/2), topH+2), top, font=font, fill="black")
+			draw.text((((width - w)/2)-3, topH), top, font=font, fill="black")
+			draw.text((((width - w)/2)+3, topH), top, font=font, fill="black")
+			draw.text((((width - w)/2), topH-3), top, font=font, fill="black")
+			draw.text((((width - w)/2), topH+3), top, font=font, fill="black")
 			draw.text(((width - w)/2, topH), top, font=font, fill="white")
 			topH += h + topP
 		
 		for line in pBot:
 			w, h = draw.textsize(line, font=font)
-			draw.text((((width - w)/2)-2, botH), bot, font=font, fill="black")
-			draw.text((((width - w)/2)+2, botH), bot, font=font, fill="black")
-			draw.text((((width - w)/2), botH-2), bot, font=font, fill="black")
-			draw.text((((width - w)/2), botH+2), bot, font=font, fill="black")
+			draw.text((((width - w)/2)-3, botH), bot, font=font, fill="black")
+			draw.text((((width - w)/2)+3, botH), bot, font=font, fill="black")
+			draw.text((((width - w)/2), botH-3), bot, font=font, fill="black")
+			draw.text((((width - w)/2), botH+3), bot, font=font, fill="black")
 			draw.text(((width - w)/2, botH), bot, font=font, fill="white")
 			botH += h + botP
 
