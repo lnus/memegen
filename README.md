@@ -23,5 +23,5 @@ text outline color
 output file
 
 ```python
-m.generate("TOP", "BOTTOM", "IMAGEFILE")
+m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="red", stroke="blue")
 ```
