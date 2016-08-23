@@ -27,3 +27,6 @@ m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="red", s
 #Dependencies
 
 PIL is the only dependency for this.
+```pip
+pip install Pillow
+```
