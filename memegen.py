@@ -27,21 +27,21 @@ class memeGen():
 
 		#Writes the text with a spicy meme outline
 		for line in pTop:
-			w, h = draw.textsize(line, font=font)
-			draw.text((((width - w)/2)-3, topH), top, font=font, fill=self.stroke)
-			draw.text((((width - w)/2)+3, topH), top, font=font, fill=self.stroke)
-			draw.text((((width - w)/2), topH-3), top, font=font, fill=self.stroke)
-			draw.text((((width - w)/2), topH+3), top, font=font, fill=self.stroke)
-			draw.text(((width - w)/2, topH), top, font=font, fill=self.textcolor)
+			w, h = draw.textsize(line, font=self.font)
+			draw.text((((width - w)/2)-3, topH), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)+3, topH), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), topH-3), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), topH+3), top, font=self.font, fill=self.stroke)
+			draw.text(((width - w)/2, topH), top, font=self.font, fill=self.textcolor)
 			topH += h + topP
 		
 		for line in pBot:
-			w, h = draw.textsize(line, font=font)
-			draw.text((((width - w)/2)-3, botH), bot, font=font, fill=self.stroke)
-			draw.text((((width - w)/2)+3, botH), bot, font=font, fill=self.stroke)
-			draw.text((((width - w)/2), botH-3), bot, font=font, fill=self.stroke)
-			draw.text((((width - w)/2), botH+3), bot, font=font, fill=self.stroke)
-			draw.text(((width - w)/2, botH), bot, font=font, fill=self.textcolor)
+			w, h = draw.textsize(line, font=self.font)
+			draw.text((((width - w)/2)-3, botH), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)+3, botH), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), botH-3), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), botH+3), bot, font=self.font, fill=self.stroke)
+			draw.text(((width - w)/2, botH), bot, font=self.font, fill=self.textcolor)
 			botH += h + botP
 
 		#saves the dank meme	
