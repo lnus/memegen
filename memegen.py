@@ -2,7 +2,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 class memeGen():
-	def generate(self, top, bot, image):
+	def generate(self, top, bot, image, **kwargs):
 		#Opens up your SPICY MEME TEMPLATE
 		im = Image.open(image)
 
@@ -10,15 +10,19 @@ class memeGen():
 		im = im.resize((500, 500), Image.ANTIALIAS)
 
 		#Stupid fucking useless arguments
+		self.output = "output.png"
+		self.font = ImageFont.truetype("impact.ttf", 60)
 		width, height = im.size
 		draw = ImageDraw.Draw(im)
-		font = ImageFont.truetype("impact.ttf", 60)
 		topH, topP = 0, 10
 		botH, botP = 420, 10
 		pTop = textwrap.wrap(top, width=15)
 		pBot = textwrap.wrap(bot, width=15)
-
 		
+		#Sets up the keyword arguments if you want proper CUSTOMIZATION
+		for key, value in kwargs.items():
+			setattr(self, key, value)
+
 		#Writes the text with a spicy meme outline
 		for line in pTop:
 			w, h = draw.textsize(line, font=font)
@@ -39,4 +43,4 @@ class memeGen():
 			botH += h + botP
 
 		#saves the dank meme	
-		im.save("output.png")
+		im.save(self.output)
