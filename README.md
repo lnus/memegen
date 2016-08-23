@@ -13,3 +13,15 @@ m.generate("TOP", "BOTTOM", "IMAGEFILE")
 ```
 
 Use this however you like.
+
+#Kwargs
+
+I've added kwarg support so now you can modify certain things, like:
+font
+text color
+text outline color
+output file
+
+```python
+m.generate("TOP", "BOTTOM", "IMAGEFILE")
+```
