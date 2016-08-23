@@ -16,13 +16,7 @@ m.generate("TOP", "BOTTOM", "IMAGEFILE")
 
 I've added kwarg support so now you can modify certain things, like:
 
-font
-
-text color
-
-text outline color
-
-output file
+font, text color, outline color, output file
 
 ###Example:
 
