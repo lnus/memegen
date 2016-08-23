@@ -14,6 +14,7 @@ class memeGen():
 		self.font = ImageFont.truetype("impact.ttf", 60)
 		self.stroke = "black"
 		self.textcolor = "white"
+		self.thickness = 3
 		width, height = im.size
 		draw = ImageDraw.Draw(im)
 		topH, topP = 0, 10
@@ -28,19 +29,19 @@ class memeGen():
 		#Writes the text with a spicy meme outline
 		for line in pTop:
 			w, h = draw.textsize(line, font=self.font)
-			draw.text((((width - w)/2)-3, topH), top, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2)+3, topH), top, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2), topH-3), top, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2), topH+3), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)-self.thickness, topH), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)+self.thickness, topH), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), topH-self.thickness), top, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), topH+self.thickness), top, font=self.font, fill=self.stroke)
 			draw.text(((width - w)/2, topH), top, font=self.font, fill=self.textcolor)
 			topH += h + topP
 		
 		for line in pBot:
 			w, h = draw.textsize(line, font=self.font)
-			draw.text((((width - w)/2)-3, botH), bot, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2)+3, botH), bot, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2), botH-3), bot, font=self.font, fill=self.stroke)
-			draw.text((((width - w)/2), botH+3), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)-self.thickness, botH), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2)+self.thickness, botH), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), botH-self.thickness), bot, font=self.font, fill=self.stroke)
+			draw.text((((width - w)/2), botH+self.thickness), bot, font=self.font, fill=self.stroke)
 			draw.text(((width - w)/2, botH), bot, font=self.font, fill=self.textcolor)
 			botH += h + botP
 
