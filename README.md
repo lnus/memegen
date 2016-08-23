@@ -17,10 +17,16 @@ Use this however you like.
 #Kwargs
 
 I've added kwarg support so now you can modify certain things, like:
+
 font
+
 text color
+
 text outline color
+
 output file
+
+##Example:
 
 ```python
 m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="red", stroke="blue")
