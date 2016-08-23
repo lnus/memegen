@@ -1,5 +1,5 @@
 # MemeGen
-Python module for easily generating dank memes
+Python module for easily generating dank memes.
 
 # Documentation
 This doesn't really need a documentation, just import it really.
