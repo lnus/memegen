@@ -16,12 +16,12 @@ m.generate("TOP", "BOTTOM", "IMAGEFILE")
 
 I've added kwarg support so now you can modify certain things, like:
 
-font, text color, outline color, output file
+thickness, font, text color, outline color, output file
 
 ###Example:
 
 ```python
-m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="red", stroke="blue")
+m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="white", stroke="black", thickness=3)
 ```
 
 #Dependencies
