@@ -1,4 +1,4 @@
-# MemeGen
+# Memegen
 Python module for easily generating dank memes.
 
 # Documentation
