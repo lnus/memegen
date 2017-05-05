@@ -4,7 +4,7 @@ Python module for easily generating dank memes.
 # Documentation
 This doesn't really need a documentation, just import it really.
 
-###Example:
+### Example:
 
 ```python
 from memegen import memeGen
@@ -12,19 +12,19 @@ m = memeGen()
 m.generate("TOP", "BOTTOM", "IMAGEFILE")
 ```
 
-#Kwargs
+# Kwargs
 
 I've added kwarg support so now you can modify certain things, like:
 
 thickness, font, text color, outline color, output file
 
-###Example:
+### Example:
 
 ```python
 m.generate("TOP", "BOTTOM", "IMAGEFILE", output="OUTPUTFILE", textcolor="white", stroke="black", thickness=3)
 ```
 
-#Dependencies
+# Dependencies
 
 PIL is the only dependency for this.
 ```pip
